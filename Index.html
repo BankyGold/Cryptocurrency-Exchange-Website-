@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Crypto Exchange Logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Markets</a></li>
+                <li><a href="#">Trade</a></li>
+                <li><a href="#">Wallet</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="market-overview">
+        <h1>Market Overview</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Coin</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bitcoin (BTC)</td>
+                    <td>$50,000</td>
+                    <td>+2.5%</td>
+                </tr>
+                <tr>
+                    <td>Ethereum (ETH)</td>
+                    <td>$4,000</td>
+                    <td>-1.2%</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <section class="trading-interface">
+        <h1>Trading Interface</h1>
+        <div class="trade-box">
+            <div class="order-form">
+                <h2>Place Order</h2>
+                <form>
+                    <label for="trade-type">Type:</label>
+                    <select id="trade-type">
+                        <option value="buy">Buy</option>
+                        <option value="sell">Sell</option>
+                    </select>
+                    <label for="trade-amount">Amount:</label>
+                    <input type="number" id="trade-amount" placeholder="Amount">
+                    <label for="trade-price">Price:</label>
+                    <input type="number" id="trade-price" placeholder="Price">
+                    <button type="submit">Submit Order</button>
+                </form>
+            </div>
+            <div class="order-book">
+                <h2>Order Book</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Price</th>
+                            <th>Amount</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$50,000</td>
+                            <td>0.5 BTC</td>
+                            <td>$25,000</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Crypto Exchange. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
